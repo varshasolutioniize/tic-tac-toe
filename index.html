@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main class="game-container">
+
+        <!-- =========================
+             TITLE
+        ========================== -->
+
+        <h1>Tic Tac Toe</h1>
+
+        <p class="subtitle">
+            Classic two-player game
+        </p>
+
+
+        <!-- =========================
+             PLAYER SETUP
+        ========================== -->
+
+        <section class="player-setup">
+
+            <div class="player-input">
+
+                <label for="player1">
+                    Player 1
+                </label>
+
+                <input type="text" id="player1" placeholder="Enter name">
+
+            </div>
+
+
+            <div class="player-input">
+
+                <label for="player2">
+                    Player 2
+                </label>
+
+                <input type="text" id="player2" placeholder="Enter name">
+
+            </div>
+
+
+            <button id="start-btn">
+                Start Game
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             GAME INFORMATION
+        ========================== -->
+
+        <section class="game-info">
+
+            <h2 id="turn-message">
+                Enter player names to start
+            </h2>
+
+        </section>
+
+
+        <!-- =========================
+             SCOREBOARD
+        ========================== -->
+
+        <section class="scoreboard">
+
+            <!-- Player 1 -->
+
+            <div class="score-card">
+
+                <span id="player1-name">
+                    Player 1
+                </span>
+
+                <strong id="player1-score">
+                    0
+                </strong>
+
+                <span class="marker">
+                    X
+                </span>
+
+            </div>
+
+
+            <!-- Player 2 -->
+
+            <div class="score-card">
+
+                <span id="player2-name">
+                    Player 2
+                </span>
+
+                <strong id="player2-score">
+                    0
+                </strong>
+
+                <span class="marker">
+                    O
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GAME BOARD
+        ========================== -->
+
+        <section id="gameboard" class="gameboard">
+        </section>
+
+<!-- =========================
+     GAME CONTROLS
+========================= -->
+
+<div class="game-controls">
+
+    <button id="restart-btn" class="restart-btn">
+        🔄 Restart
+    </button>
+
+    <button id="new-game-btn" class="play-again-btn">
+        🎮 Play Again
+    </button>
+
+    <button id="exit-btn" class="exit-btn">
+        🚪 Exit
+    </button>
+
+</div>
+
+
+<!-- Exit Screen -->
+
+<div id="exit-screen" class="exit-screen">
+    <div class="exit-card">
+
+        <div class="exit-emoji">
+            👋
+        </div>
+
+        <h2>
+            Thanks for Playing!
+        </h2>
+
+        <p>
+            See you next time! 🌈
+        </p>
+
+        <button id="play-again-btn" class="play-again-btn">
+            🎮 Play Again
+        </button>
+
+    </div>
+</div>
+        
+             
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
